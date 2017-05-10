@@ -123,7 +123,6 @@ class CalculatorApp extends Component {
         displayValue: String(computedValue),
       });
     }
-
     this.setState({
       waitingForOperand: true,
       operator: nextOperator,
