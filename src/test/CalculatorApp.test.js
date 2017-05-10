@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import expect from 'expect';
-
-const TestUtils = require('react-dom/test-utils');
+import TestUtils from 'react-dom/test-utils';
 
 import CalculatorApp from '../components/CalculatorApp';
 
