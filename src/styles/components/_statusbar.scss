@@ -1,0 +1,14 @@
+.status-bar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2em;
+  #wifi-icon {
+    margin-left: -4.5em;
+  }
+  span {
+    color: #fff;
+    font-size: 0.625em;
+    margin-left: -2.7em;
+  }
+}

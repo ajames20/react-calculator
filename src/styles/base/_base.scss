@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  border: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin-top: 0.5em;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  height: 600px;
+  width: 100%;
+  p {
+    margin: 0.5em 0;
+    text-align: center;
+  }
+  a {
+    color: #f18f00;
+    text-decoration: none;
+  }
+}
+
+.thick-border {
+  border: 1.2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.camera,
+.circle,
+.home-button,
+.iphone,
+.screen,
+.speaker {
+  margin: 0 auto;
+}
+
+.iphone {
+  width: 280px;
+  height: 580px;
+  opacity: 0.8;
+  border: 5px solid #c8c8c8;
+  border-radius: 32px;
+  background: #f9f7f9;
+}
+
+.circle {
+  background: #c8c8c8;
+  border-radius: 50%;
+  height: 11px;
+  position: relative;
+  top: -570px;
+  width: 11px;
+}
+
+.camera {
+  background: #c8c8c8;
+  border-radius: 50%;
+  height: 12px;
+  left: -48px;
+  position: relative;
+  top: -566px;
+  width: 12px;
+}
+
+.speaker {
+  background: #c8c8c8;
+  border-radius: 5px;
+  height: 6px;
+  position: relative;
+  top: -575px;
+  width: 61px;
+}
+
+.home-button {
+  background: #c8c8c8;
+  border-radius: 50%;
+  height: 48px;
+  position: relative;
+  top: -555px;
+  width: 48px;
+  z-index: 2;
+}
