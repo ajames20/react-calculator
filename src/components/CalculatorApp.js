@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Display extends React.Component {
+class Display extends Component {
   state = {
     scale: 1,
   };
