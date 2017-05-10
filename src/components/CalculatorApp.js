@@ -134,10 +134,11 @@ class CalculatorApp extends Component {
 
   clearDisplay() {
     this.setState({
+      value: null,
       displayValue: 0,
       clearButton: 'AC',
-      operator: null,
       waitingForOperand: false,
+      operator: null,
     });
   }
   render() {
