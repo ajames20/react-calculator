@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 // Componentes
 import Phone from './components/Phone';
 import StatusBar from './components/StatusBar';
-import Display from './components/Display';
-import Keys from './components/Keys';
+import CalculatorApp from './components/CalculatorApp';
 
 class App extends Component {
   render() {
@@ -13,8 +12,7 @@ class App extends Component {
         <Phone />
         <div className="screen">
           <StatusBar />
-          <Display />
-          <Keys />
+          <CalculatorApp />
         </div>
         <div className="home-button" />
       </div>
