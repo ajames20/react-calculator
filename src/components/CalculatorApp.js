@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NumberFormat from 'react-number-format';
 
 class Display extends Component {
   state = {
@@ -40,16 +41,13 @@ class Display extends Component {
 }
 
 class CalculatorApp extends Component {
-  constructor() {
-    super();
-    this.state = {
-      value: null,
-      displayValue: 0,
-      clearButton: 'AC',
-      waitingForOperand: false,
-      operator: null,
-    };
-  }
+  state = {
+    value: null,
+    displayValue: 0,
+    clearButton: 'AC',
+    waitingForOperand: false,
+    operator: null,
+  };
 
   inputDigit(digit) {
     const { displayValue, waitingForOperand } = this.state;
@@ -146,7 +144,13 @@ class CalculatorApp extends Component {
     return (
       <div>
         <div id="display">
-          <Display className="calculator-output">{displayValue}</Display>
+          <Display className="calculator-output">
+            <NumberFormat
+              value={displayValue}
+              displayType={'text'}
+              thousandSeparator
+            />
+          </Display>
         </div>
         <div>
           <div className="btn-line">
