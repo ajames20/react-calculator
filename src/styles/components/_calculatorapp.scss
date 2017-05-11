@@ -16,10 +16,8 @@
     font-family: 'Roboto', Helvetica;
     font-size: 4em;
     font-weight: 100;
-    line-height: 0.9;
-    margin-left: 0.5em;
-    padding-bottom: 0.2em;
     padding-right: 0.1em;
+    padding-top: .5em;
   }
 }
 
@@ -56,6 +54,7 @@
     padding-top: 8px;
     text-align: center;
     width: 61px;
+    padding: 0 22px;
     &:focus {
       outline: none;
     }
@@ -75,6 +74,7 @@
     -webkit-box-flex: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
+    padding: 0 55px;
   }
   .calc-btn:hover {
     background-color: #c8c8c8;
