@@ -7,8 +7,10 @@ class Display extends Component {
   };
 
   componentDidUpdate() {
+    // checks if component did mount
     const { scale } = this.state;
 
+    // this.node = calculator output is displayed
     const node = this.node;
     const parentNode = node.parentNode;
 
@@ -103,10 +105,10 @@ class CalculatorApp extends Component {
     const { displayValue, operator, value } = this.state;
     const nextValue = parseFloat(displayValue);
     const operations = {
-      '/': (prevValue, nextValue) => prevValue / nextValue,
-      '*': (prevValue, nextValue) => prevValue * nextValue,
-      '+': (prevValue, nextValue) => prevValue + nextValue,
-      '-': (prevValue, nextValue) => prevValue - nextValue,
+      '/': (prevValue, nextValue) => prevValue / nextValue, // returns prevValue / nextValue
+      '*': (prevValue, nextValue) => prevValue * nextValue, // returns prevValue * nextValue
+      '+': (prevValue, nextValue) => prevValue + nextValue, // returns prevValue + nextValue
+      '-': (prevValue, nextValue) => prevValue - nextValue, // returns prevValue - nextValue
       '=': (prevValue, nextValue) => nextValue,
     };
     if (value == null) {
