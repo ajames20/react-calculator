@@ -17,6 +17,8 @@ class StatusBar extends Component {
   setTime = () => {
     const currentdate = new Date();
     let hours = currentdate.getHours();
+    let minutes = currentdate.getMinutes();
+    let seconds = currentdate.getSeconds();
 
     // correct for number over 24, and negatives
     if (hours >= 24) {
@@ -31,13 +33,11 @@ class StatusBar extends Component {
       hours = `0${hours}`;
     }
 
-    let minutes = currentdate.getMinutes();
     minutes += '';
     if (minutes.length === 1) {
       minutes = `0${minutes}`;
     }
 
-    let seconds = currentdate.getSeconds();
     seconds += '';
     if (seconds.length === 1) {
       seconds = `0${seconds}`;
