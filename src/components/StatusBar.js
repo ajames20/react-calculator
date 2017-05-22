@@ -43,6 +43,7 @@ class StatusBar extends Component {
       seconds = `0${seconds}`;
     }
     this.setState({
+      // hours, === hours: hours,
       hours,
       minutes,
       seconds,

@@ -105,6 +105,7 @@ class CalculatorApp extends Component {
     const { displayValue, operator, value } = this.state;
     const nextValue = parseFloat(displayValue);
     const operations = {
+      // Check nextOperator with arrow function instead of using a large switch statemet
       '/': (prevValue, nextValue) => prevValue / nextValue, // returns prevValue / nextValue
       '*': (prevValue, nextValue) => prevValue * nextValue, // returns prevValue * nextValue
       '+': (prevValue, nextValue) => prevValue + nextValue, // returns prevValue + nextValue
@@ -118,6 +119,7 @@ class CalculatorApp extends Component {
       });
     } else if (operator) {
       const currentValue = value || 0;
+      // comupute all math here with operations[operator](currentValue, nextValue)
       const computedValue = operations[operator](currentValue, nextValue);
 
       this.setState({

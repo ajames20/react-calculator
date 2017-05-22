@@ -51,10 +51,9 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 8px;
+    padding: 8px 22px;
     text-align: center;
     width: 61px;
-    padding: 0 22px;
     &:focus {
       outline: none;
     }
@@ -64,11 +63,13 @@
   }
   .calc-btn-top {
     background-color: #d8d8d8;
+    padding: 8px 20px;
   }
   .calc-btn-right {
     background-color: #f18f00;
     border-right: 0;
     color: #fff;
+    padding: 8px 24px;
   }
   .zero {
     -webkit-box-flex: 2;
@@ -93,6 +94,6 @@
   padding: 0 30px;
   position: absolute;
   right: 0;
+  transform-origin: right;
   -webkit-transform-origin: right;
-  transform-origin: right
 }
