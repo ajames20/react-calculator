@@ -57,7 +57,7 @@ class StatusBar extends Component {
         <span>
           {this.state.hours}:{this.state.minutes}:{this.state.seconds}
         </span>
-        <img id="battery-icon" src={battery} alt="battery" />
+        <img src={battery} alt="battery" />
       </div>
     );
   }
