@@ -52,9 +52,9 @@ class StatusBar extends Component {
   render() {
     return (
       <div className="status-bar">
-        <img id="status-icon" src={statusbar} alt="singnal" />
+        <img src={statusbar} alt="singnal" />
         <img id="wifi-icon" src={wifi} alt="wifi" />
-        <span id="clock">
+        <span>
           {this.state.hours}:{this.state.minutes}:{this.state.seconds}
         </span>
         <img id="battery-icon" src={battery} alt="battery" />
