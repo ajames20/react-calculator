@@ -5,7 +5,7 @@ Front-end Web Development Calculator SPA.
 
 ## Open Project
 
-1. Clone repository from [github](  https://github.com/ajames20/react-calculator) or open [Demo](https://far-zinc.surge.sh/)
+1. Clone repository from [github](https://github.com/ajames20/react-calculator) or open [Demo](https://far-zinc.surge.sh/)
 
 
 ## Project Overview
